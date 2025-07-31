@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="author" content="Abinesh R">
+        <meta name="Description" content="Simple Calculator">
+        <meta name="keywords" content="Simple Calculator">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Simple Calculator</title>
+        <link rel="icon" href="calsi.png">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div class="cont">
+            <div class="outer-cont">
+                <h1>Simple Calculator</h1>
+                <input type="text" required id="input">
+                <div class="inner-cont">
+                    <section class="first-row">
+                        <button onclick="clearAll()">AC</button>
+                        <button onclick="clearOne()">C</button>
+                        <button onclick="displayValue('.')">.</button>
+                        <button onclick="displayValue('/')">/</button>
+                    </section>
+                    <section class="second-row">
+                        <button onclick="displayValue(9)">9</button>
+                        <button onclick="displayValue(8)">8</button>
+                        <button onclick="displayValue(7)">7</button>
+                        <button onclick="displayValue('*')">*</button>
+                    </section>
+                    <section class="third-row">
+                        <button onclick="displayValue(6)">6</button>
+                        <button onclick="displayValue(5)">5</button>
+                        <button onclick="displayValue(4)">4</button>
+                        <button onclick="displayValue('-')">-</button>
+                    </section>
+                    <section class="fourth-row">
+                        <button onclick="displayValue(3)">3</button>
+                        <button onclick="displayValue(2)">2</button>
+                        <button onclick="displayValue(1)">1</button>
+                        <button onclick="displayValue('+')">+</button>
+                    </section>
+                    <section class="fifth-row">
+                        <button onclick="displayValue('00')">00</button>
+                        <button onclick="displayValue(0)">0</button>
+                        <button style="width: 47%;" onclick="evalute()">=</button>
+                    </section>
+                </div>
+            </div>
+        </div>
+        <script src="script.js"></script>
+    </body>
+</html>
